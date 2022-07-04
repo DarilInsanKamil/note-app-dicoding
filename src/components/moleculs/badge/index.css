@@ -1,0 +1,21 @@
+.container-badge {
+  background-color: #ff735c;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  align-items: center;
+  height: fit-content;
+  color: white;
+  border: 0px;
+  cursor: pointer;
+}
+.badge-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.container-badge:hover {
+  background-color: rgba(255, 115, 92, 0.9);
+}

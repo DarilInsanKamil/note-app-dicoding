@@ -1,0 +1,31 @@
+.fragment {
+  background-color: #262626;
+  padding: 0px 28px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.badge-container {
+  width: 100%;
+}
+.scrollbar {
+  max-height: 75vh;
+  overflow-y: scroll;
+}
+.scrollbar::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0px;
+}
+@media (max-width: 768px) {
+  .fragment {
+    padding: 24px 16px;
+  }
+  .container {
+    display: block;
+  }
+  .scrollbar::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0px;
+  }
+}

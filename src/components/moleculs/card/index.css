@@ -1,0 +1,24 @@
+.card-container {
+  background-color: #1a2e35;
+  padding: 20px;
+  border-radius: 16px;
+}
+.header-card {
+  display: flex;
+  justify-content: space-between;
+}
+.card-desc {
+  font-family: Inter, san-serif;
+  color: rgba(245, 245, 245, 0.7);
+}
+.card-button-container {
+  display: flex;
+}
+.title-card {
+  color: #fff;
+  font-size: 20px;
+}
+.card-createaAt {
+  color: rgba(245, 245, 245, 0.3);
+  font-size: 12px;
+}
