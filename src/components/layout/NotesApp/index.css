@@ -17,6 +17,10 @@
   background-color: transparent;
   width: 0px;
 }
+.icon {
+  width: 16px;
+  height: 16px;
+}
 @media (max-width: 768px) {
   .fragment {
     padding: 24px 16px;

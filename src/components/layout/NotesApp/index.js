@@ -1,5 +1,5 @@
 import { useContext, useRef, useState } from "react"
-import { Note, PinnedFill } from "../../../assets"
+import { Note, PinnedFill, Plus, Search } from "../../../assets"
 import { NoteContext } from "../../../context/NoteContext"
 import { Input, Gap } from "../../atom"
 import { Badge } from "../../moleculs"
@@ -30,11 +30,11 @@ export const NotesApp = () => {
         <main>
             <LandingPage Scroll={scrollToElement} />
             <section className="fragment" ref={element}>
-                <Input value={inputSearch} onChange={(e) => setInputSearch(e.target.value)} placeholder='search...' style={{ width: '100%' }} />
+                <Input value={inputSearch} onChange={(e) => setInputSearch(e.target.value)} placeholder='search...' style={{ width: '100%' }} limit={<img src={Search} className='icon' alt='icon'/>}/>
                 <Gap height={"40px"} />
                 <div className="container">
                     <section className="badge-container">
-                        <Badge title={"Form"} img={Note} onClick={() => setCollapse(!collapse)} />
+                        <Badge title={"Form"} img={Plus} onClick={() => setCollapse(!collapse)} />
                         <Gap height={"12px"} />
                         {collapse ?
                             <NotesInput /> : <></>
