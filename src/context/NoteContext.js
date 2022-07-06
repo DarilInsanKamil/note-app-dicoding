@@ -1,9 +1,10 @@
 import { createContext, useState } from "react";
+import { getInitialData } from "../utils";
 
 export const NoteContext = createContext()
 export const NoteProvider = (props) => {
-    const [noteData, setNoteData] = useState([])
-    const [noteArsip, setNoteArsip] = useState([])
+    const data = getInitialData()
+    const [noteData, setNoteData] = useState(data)
     const [inputNote, setInputNote] = useState('')
     const [inputArea, setInputArea] = useState('')
     const [inputSearch, setInputSearch] = useState('')
@@ -44,7 +45,6 @@ export const NoteProvider = (props) => {
     return (
         <NoteContext.Provider value={{
             noteData, setNoteData,
-            noteArsip, setNoteArsip,
             inputNote, setInputNote,
             inputArea, setInputArea,
             inputSearch, setInputSearch,
