@@ -15,7 +15,7 @@ export const Card = ({ title, create, body, onDelete, onArsip, value, txt }) => 
             <p className="card-desc">{body}</p>
             <Gap height={"12px"}/>
             <div className='card-button-container'>
-                <Button txt="Delete" style={{width: '100%'}} onClick={onDelete} value={value} />
+                <Button txt="Delete" style={{width: '100%', backgroundColor: '#ef4444'}} onClick={onDelete} value={value} />
                 <Gap width={"20px"} />
                 <Button txt={txt} style={{width: '100%'}} onClick={onArsip} value={value} />
             </div>
